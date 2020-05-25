@@ -1,7 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using System.Collections.Generic;
 
-namespace cw11.Models
+namespace cw11.DAL
 {
     public class CodeFirstContext : DbContext
     {

@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using cw11.Models;
+using cw11.DAL;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -30,7 +30,7 @@ namespace cw11
         {
             services.AddDbContext<CodeFirstContext>(Options =>
             {
-                Options.UseSqlServer("Data Source=db-mssql;Initial Catalog=s18977;Integrated Security=True;");
+                Options.UseSqlServer("DbContext");
             });
             services.AddControllers();
         }
